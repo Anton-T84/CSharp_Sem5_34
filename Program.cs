@@ -15,7 +15,7 @@ int [] arrayCreation(int length)
 { //Метод создания массива
     Random rnd= new Random (); //подключаем рандом
     int[] array = new int[length]; //создаём массив размером length
-    for (int i = 0; i< array.Length; i++) //создаём цикл прохода по всему массиву ( не используем foreach так как массив пустой)
+    for (int i = 0; i< array.Length; i++) //создаём цикл прохода по всему массиву (не используем foreach так как массив пустой)
         array[i] = rnd.Next(100,1000); //присвоение случайного значения каждому элементу массива
 return array; //возвращаем массив
 }
@@ -41,7 +41,7 @@ string printArray(int[] array)
         else if ((i == 0) && (array.Length == 1) ) //Если длина массива 1
             result.Append("[").Append(array[i]).Append("]"); //однозначный массив
         else if ( i < array.Length -1 )
-            result.Append(array[i]).Append(", "); //середина , просто с запятыми
+            result.Append(array[i]).Append(", "); //середина, просто с запятыми
         else 
             result.Append(array[i]).Append("]"); //Для того что бы последнее значение было обрамлено в [
     }
